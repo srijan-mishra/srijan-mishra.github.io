@@ -1,0 +1,78 @@
+body {
+    padding-top: 70px;
+    position: relative;
+}
+
+.navbar {
+    font-size: 15px;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+.navbar-white {
+    background-color: #fff;
+}
+
+.navbar-white .navbar-brand {
+    color: #222;
+}
+
+.navbar-white .navbar-nav > li > a {
+    color: #222;
+}
+
+.navbar-white .navbar-toggle .icon-bar {
+    background-color: #b3b3b3;
+}
+
+.navbar-white .navbar-nav > .active > a {
+    background-color: #eeeeee;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.no-border {
+    border: 0px;
+}
+
+.project-row, .gsoc-row {
+    margin-bottom: 30px;
+}
+
+#footer {
+    margin-bottom: 20px;
+}
+
+.zero-top {
+    margin-top: 0px;
+}
+
+h3 > span {
+    font-size: 18px;
+}
+
+.jumbotron p, .jumbotron li {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        padding: 12px 0;
+    }
+}

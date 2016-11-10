@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noarchive, noodp"/>
     <meta name="author" content="Nakul Gulati"/>
-    <meta name="description" content="Portfolio website for Nakul Gulati. Contains details about projects and resume."/>
+    <meta name="description" content="Sentiment Analysis project details."/>
     <meta name="google-site-verification" content="Fy2OqSbx2NleVgqLfJ_Xos6BH3tTJRe8jZgF3Mepwi8"/>
 
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -57,16 +57,46 @@
 
 <div id="page-content">
     <div class="container">
-        <div class="jumbotron">
-            <p>
-                Throughout my course I have completed a few <a href="projects.html">projects</a>. Currently I'm working
-                on a project which involves applying machine learning techniques to Cyber Security.
-            </p>
-            <p>
-                Last summer, as part of the Google Summer of Code 2015, I worked on a project to <a
-                    href="https://goo.gl/UCkVGb">reverse engineer and implement Google+ Hangouts protocol for
-                libpurple</a>, more information <a href="gsoc.html">here</a>.
-            </p>
+        <div class="row project-row">
+            <div class="col-lg-10">
+                <h3 class="zero-top"><strong>Sentiment Analysis</strong></h3>
+                <p>
+                    The was aimed to predict the polarity (positive/negative) of a given text data using machine
+                    learning and natural language techniques. The sentiment analysis was applied to a movie review
+                    dataset.
+                </p>
+                <h4><strong>Implementation Details</strong></h4>
+                <p>
+                    <strong>Dataset Size:</strong> 2000 records (1000 of each polarity - positive and negative)<br>
+                    <strong>Testing and Cross validation:</strong> 10-30% of the entire dataset
+                </p>
+                <h5><strong>Language Model</strong></h5>
+                <p>
+                    Bigram Frequencies, takes in account only adjacent pair of words. Relationship between words further
+                    apart in the sentence is unaccounted for in this model.
+                </p>
+
+                <h5><strong>Classifiers</strong> (implemented using scikit-learn)</h5>
+                <ul>
+                    <li>Multinomial Naive Bayesian</li>
+                    <li>Stochastic Gradient Descent</li>
+                </ul>
+
+                <h5><strong>Results</strong></h5>
+                <p>
+                    The following graphs show mean accuracy, F1 score of positive and negative classes vs training set
+                    size.
+                </p>
+                <img class="img-responsive graph" src="img/mnb.jpeg"> <br>
+                <img class="img-responsive graph" src="img/sgd.jpeg">
+                <h5><strong>Links</strong></h5>
+                <ul>
+                    <li><a href="https://github.com/codebuff/sentiment-analysis" target="_blank">Project link</a> on
+                        github.com
+                    </li>
+                    <li><a href="http://scikit-learn.org/" target="_blank">scikit-learn</a> on scikit-learn.org/</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

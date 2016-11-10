@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noarchive, noodp"/>
     <meta name="author" content="Nakul Gulati"/>
-    <meta name="description" content="Portfolio website for Nakul Gulati. Contains details about projects and resume."/>
+    <meta name="description" content="Nakul Gulati's project details."/>
     <meta name="google-site-verification" content="Fy2OqSbx2NleVgqLfJ_Xos6BH3tTJRe8jZgF3Mepwi8"/>
 
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -45,7 +45,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="gsoc.html">Google Summer of Code 2015</a></li>
                         <li><a href="http://dl.acm.org/citation.cfm?id=2820981" target="_blank">Publication</a></li>
-                        <li><a href="projects.html">Projects</a></li>
+                        <li class="active"><a href="projects.html">Projects</a></li>
                         <li><a href="nakul-gulati-resume.pdf" target="_blank">Resume</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -57,16 +57,65 @@
 
 <div id="page-content">
     <div class="container">
-        <div class="jumbotron">
-            <p>
-                Throughout my course I have completed a few <a href="projects.html">projects</a>. Currently I'm working
-                on a project which involves applying machine learning techniques to Cyber Security.
-            </p>
-            <p>
-                Last summer, as part of the Google Summer of Code 2015, I worked on a project to <a
-                    href="https://goo.gl/UCkVGb">reverse engineer and implement Google+ Hangouts protocol for
-                libpurple</a>, more information <a href="gsoc.html">here</a>.
-            </p>
+        <div class="row project-row">
+            <div class="col-lg-10">
+                <article class="project">
+                    <h3 class="zero-top">Stock Recommender System <span class="text-muted">(on going)</span></h3>
+                    <p>
+                        The project has two primary goals, stock trading data aggregation and using machine learning
+                        techniques to recommend stocks. The prelim recommendation model when tested using backtesting
+                        technique recommended stocks that generated profit.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Predicting polarity (positive/negative) of textual data using maximum likely hood approach. Click
+                        <a href="sentiment-analysis.html">here</a> for more details</p>
+                </article>
+
+                <article class="project">
+                    <h3>Graph Engine</h3>
+                    <p>
+                        The engine aims to provide a scalable architecture and a robust API for graph manipulation and
+                        first level entity graph generation.
+                        <a href="https://github.com/nakulgulati/GenericGraphEngine">Code on GitHub</a>
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3>Location Based Customization App</h3>
+                    <p>
+                        An Android app that customizes phones settings viz. Wi-Fi, Bluetooth and data based on user's
+                        location. The user can group settings which are then associated with an area. The area is set
+                        using
+                        Android's Geofence API. Currently areas can be approximated into circular areas using radius as
+                        a
+                        parameter.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3>War Robot</h3>
+                    <p>
+                        A remote controlled war robot with a frontal spinning blade as a primary weapon. The robot
+                        consisted of a Bluetooth receiver which enabled it to be controlled using an Android device. The
+                        microcontroller used was Arduino uno.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h3>Connect Four AI Bot</h3>
+                    <p>
+                        Connect four is a turn by turn zero sum game, where the objective of the game is to connect four
+                        disks of chosen color vertically, horizontally or diagonally before the opponent.
+                    </p>
+                    <p>
+                        The bot was an implementation of Minimax algorithm in Java. The algorithm determines the optimum
+                        move by 'looking' four moves ahead.
+                    </p>
+                </article>
+            </div>
         </div>
     </div>
 </div>
