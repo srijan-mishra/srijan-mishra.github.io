@@ -65,7 +65,10 @@ h3 > span {
     font-weight: 200;
 }
 
+.image{
+  text-align: center;
 
+}
 @media screen and (min-width: 1024px) {
     .container {
         width: 1000px;
