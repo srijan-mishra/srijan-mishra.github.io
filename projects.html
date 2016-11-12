@@ -60,10 +60,15 @@
                 <article class="project">
                     <h3 class="zero-top">Mobility Assistant for Visually Impaired <span class="text-muted">(August, 2016 - Present)</span></h3>
                     <p>
-                        Mobility Assistant for Visually Impaired(MAVI) is a product being developed by <a href="http://assistech.iitd.ernet.in/index.php">Assistech, IIT Delhi</a> where we are working towards developing a mobility assistant for blind people that would provide them real-time instructions on the scenario in front of them using Image-Processing, Computer Vision and NLP techniques. I am working on the critical aspect of removing shadows from images, which cause serious troubles in other feature detection algorithms.
+                        Mobility Assistant for Visually Impaired(MAVI) is a product being developed by <a href="http://assistech.iitd.ernet.in/index.php">Assistech, IIT Delhi</a> where we are working towards developing a mobility assistant for blind people that would provide them real-time instructions on the scenario in front of them using Image-Processing, Computer Vision and NLP techniques. I am working on the critical aspect of removing shadows from images, which cause serious troubles in other feature detection algorithms. The following has been accomplished till now:
                     </p>
                     <ul>
-                      <li>Coffee</li>
+                      <li>Implementation of a 1-D Illuminant Invariant approach: to get to the Illuminant Invariant image that does not contain shadows. Re-integration of the image to get back the original image. The approach seems to work well on artificial high-contrast images but failed on real life scenarios which is the intended case.</li>
+                        <ol>
+                          <li>Illuminant invariant image is obtained using a color constancy approach.</li>
+                          <li>Illuminant-invariant image does not contain shadow-edges and hence difference of Canny-edge detection on original image and illuminant invariant image gives shadow edges.</li>
+                          <li>The derivatives at the shadow edges are set to be zero and the image is integrated to achieve shadow-free image.
+                        </ol>
                       <li>Milk</li>
                     </ul>
                 </article>
