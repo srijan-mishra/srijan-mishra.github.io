@@ -63,13 +63,18 @@
                         Mobility Assistant for Visually Impaired(MAVI) is a product being developed by <a href="http://assistech.iitd.ernet.in/index.php">Assistech, IIT Delhi</a> where we are working towards developing a mobility assistant for blind people that would provide them real-time instructions on the scenario in front of them using Image-Processing, Computer Vision and NLP techniques. I am working on the critical aspect of removing shadows from images, which cause serious troubles in other feature detection algorithms. The following has been accomplished till now:
                     </p>
                     <ul>
-                      <li>Implementation of a 1-D Illuminant Invariant approach:</li>
+                      <li><a href="https://github.com/srijan-mishra/Shadow-Removal/blob/master/1D%20Illuminant%20invariant%20image.py">Implementation of a 1-D Illuminant Invariant approach</a>:</li>
                         <ol>
                           <li>Illuminant invariant image is obtained using a color constancy approach.</li>
                           <li>Illuminant-invariant image does not contain shadow-edges and hence difference of Canny-edge detection on original image and illuminant invariant image gives shadow edges.</li>
                           <li>The derivatives at the shadow edges are set to be zero and the image is integrated to achieve shadow-free image.
                         </ol>
-                      <li>Milk</li>
+                      <li>Using Depth cues for Shadow Removal:</li>
+                      <ol>
+                        <li>Key assumption: pixels with similar normals, spatial locations and chromaticity should have similar colors.</li>
+                        <li>A modified nonlocal matching is used to compute a shadow confidence map that localizes well hard shadow boundary, thus handling hard and soft shadows within the same framework.</li>
+                        <li>A standard energyminimization using the confidence map is then used to automatically produce the optimized shadowless image.</li>
+                      </ol>
                     </ul>
                 </article>
 
